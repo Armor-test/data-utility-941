@@ -1,0 +1,41 @@
+# CODEOWNERS file for data-utility-941
+# Global owners - will be requested for all PRs
+* @Armor-test/squad-tooling @Armor-test/squad-research @Armor-test/dept-security
+
+# Directory ownership
+/shared/ @Armor-test/squad-research @Armor-test/squad-cloud
+/app/ @Armor-test/unit-cloud @Armor-test/squad-research @Armor-test/squad-product
+/middleware/ @Armor-test/team-notifications @Armor-test/squad-apps @Armor-test/squad-ml
+/styles/ @Armor-test/squad-mobile @Armor-test/squad-apps
+/security/ @Armor-test/unit-test @Armor-test/squad-research @Armor-test/squad-tooling
+/test/ @Armor-test/squad-reporting @Armor-test/unit-devops @Armor-test/dept-data
+/public/ @Armor-test/squad-search @Armor-test/team-reporting @Armor-test/dept-ui
+/data/ @Armor-test/dept-logging @Armor-test/squad-tooling
+/static/ @Armor-test/dept-logging @Armor-test/dept-billing
+/web/ @Armor-test/squad-apps @Armor-test/squad-ux @Armor-test/dept-reporting
+/api/ @Armor-test/squad-cloud @Armor-test/squad-payments @Armor-test/grp-ui
+/extensions/ @Armor-test/team-notifications @Armor-test/squad-cloud
+/spec/ @Armor-test/grp-search @Armor-test/dept-identity
+/models/ @Armor-test/squad-cache @Armor-test/squad-api @Armor-test/dept-notifications
+/modules/ @Armor-test/squad-performance @Armor-test/team-logging @Armor-test/team-governance
+
+# File type ownership
+*.scala @Armor-test/squad-frontend @Armor-test/dept-security
+*.lock @Armor-test/squad-tooling @Armor-test/squad-performance
+*.rb @Armor-test/squad-cloud @Armor-test/squad-ml @Armor-test/squad-performance
+*.cpp @Armor-test/team-core @Armor-test/grp-reporting @Armor-test/team-security
+*.ini @Armor-test/grp-search @Armor-test/team-frontend @Armor-test/team-security
+*.config @Armor-test/team-reporting @Armor-test/squad-cache @Armor-test/dept-data
+*.sh @Armor-test/dept-reporting @Armor-test/squad-qa
+*.graphql @Armor-test/squad-ml @Armor-test/team-reporting @Armor-test/team-notifications
+*.toml @Armor-test/dept-billing @Armor-test/squad-api @Armor-test/squad-database
+*.properties @Armor-test/squad-payments @Armor-test/squad-ux @Armor-test/squad-apps
+*.swift @Armor-test/squad-qa @Armor-test/dept-billing
+*.go @Armor-test/team-governance @Armor-test/grp-api
+*.yml @Armor-test/squad-payments @Armor-test/unit-design
+
+# Security and special files
+Dockerfile @Armor-test/devops @Armor-test/infra
+Jenkinsfile @Armor-test/ci-team @Armor-test/devops
+/src/**/security/ @Armor-test/security @Armor-test/compliance
+/src/**/auth/ @Armor-test/security @Armor-test/auth-team
